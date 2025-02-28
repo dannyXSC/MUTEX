@@ -1,7 +1,8 @@
-CUDA_VISIBLE_DEVICES=0 python3 mutex/main_masked_modeling.py \
-        benchmark_name=LIBERO_100 \
-        policy.task_spec_modalities=gl_inst_img_vid_ai_ag \
-        policy.add_mim=True policy.add_mgm=True policy.add_mrm=True \
-        policy.add_mfm=True policy.add_maim=True policy.add_magm=True \
-        folder=dataset-path \
-        hydra.run.dir=experiments/mutex
+CUDA_VISIBLE_DEVICES=1 python3 mutex/main_masked_modeling.py \
+        benchmark_name=rw_h2r \
+        policy.task_spec_modalities=img_vid \
+        policy.add_mim=False policy.add_mgm=False policy.add_mrm=True \
+        policy.add_mfm=True policy.add_maim=False policy.add_magm=False \
+        folder=./dataset \
+        hydra.run.dir=experiments/mutex \
+        data=h2r 

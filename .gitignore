@@ -17,3 +17,6 @@ src/*
 temp/*
 *.egg-info/*
 *_exps/*
+
+test/
+dataset/
